@@ -99,7 +99,7 @@ RUN set -ex \
 	&& apt-get purge -y --auto-remove $buildDeps \
 	&& rm -rf /usr/src/haxe ~/.cache
 	
-RUN npm install-g yarn
+RUN npm install -g yarn
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	make \
