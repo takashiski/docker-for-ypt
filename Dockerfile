@@ -1,4 +1,4 @@
-FROM ghcr.io/denkiyagi/docker-haxe-nodejs:master
+FROM mcr.microsoft.com/playwright:focal
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	make \
