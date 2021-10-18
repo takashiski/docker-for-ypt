@@ -32,6 +32,7 @@ RUN set -ex \
 	libsqlite3-dev \
 	libmbedtls-dev \
 	libgtk2.0-dev \
+	wget \
 	' \
 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \
 	\
