@@ -1,4 +1,7 @@
-FROM ghcr.io/takashiski/playwright-node12-container:master
+# node v12
+#FROM ghcr.io/takashiski/playwright-node12-container:master
+# original(node v14)
+FROM mcr.microsoft.com/playwright:focal
 
 # ensure local haxe is preferred over distribution haxe
 ENV PATH /usr/local/bin:$PATH
